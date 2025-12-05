@@ -1,19 +1,15 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { getUrlBySlug } from "./services/get-url-by-slug";
 
-export async function proxy(request: NextRequest) {
-  "use cache";
-  const slug = request.nextUrl.pathname.split("/").pop();
-  if (!slug) {
+export async function proxy(req: NextRequest) {
+  const url = req.nextUrl;
+  const slug = url.pathname.slice(1);
+  if (!slug || slug.includes("/")) {
     return NextResponse.next();
   }
 
-  const url = await getUrlBySlug(slug);
-  if (!url) {
-    return NextResponse.next();
-  }
+  url.pathname = `/r/${slug}`;
 
-  return NextResponse.next();
+  return NextResponse.redirect(url);
 }
 
 export const config = {
