@@ -87,9 +87,9 @@ const Ray = ({
 export function LightRays({
   className,
   style,
-  count = 7,
+  count = 12,
   color = "oklch(90.1% 0.076 70.697 / 0.12)",
-  blur = 64,
+  blur = 48,
   speed = 20,
   length = "80vh",
   ref,

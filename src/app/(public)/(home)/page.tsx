@@ -7,23 +7,22 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group";
-import { LightRays } from "@/components/ui/light-rays";
 
 export default function Home() {
   return (
-    <section className="py-16 flex flex-col items-center gap-8 max-w-3xl">
+    <section className="py-48 flex flex-col items-center gap-8 max-w-3xl h-full">
       <div className="flex flex-col items-center gap-4">
-        <h1 className="text-5xl font-bold text-center text-balance">
+        <h1 className="text-5xl max-sm:text-3xl font-bold text-center text-pretty">
           Build{" "}
           <span className="italic bg-linear-to-r from-primary to-destructive bg-clip-text text-transparent">
             stronger{" "}
           </span>
           digital connections
         </h1>
-        <span className="text-lg text-center text-balance">
-          Use our URL shortener and QR Codes to engage your audience and connect
-          them to the right information. Build, edit, and track everything
-          inside the zigg.
+        <span className="text-lg max-sm:text-sm text-center text-pretty">
+          Use our <span className="font-bold">URL shortener</span> and{" "}
+          <span className="font-bold">QR Codes</span> to engage your audience
+          and connect them to the right information.
         </span>
       </div>
       <div className="max-w-md w-full">
@@ -50,7 +49,6 @@ export default function Home() {
           </Field>
         </Form>
       </div>
-      <LightRays />
     </section>
   );
 }

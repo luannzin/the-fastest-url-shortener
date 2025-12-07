@@ -3,6 +3,7 @@ import { AnchoredToastProvider, ToastProvider } from "@/components/ui/toast";
 import "./globals.css";
 
 import { Roboto } from "next/font/google";
+import { LightRays } from "@/components/ui/light-rays";
 import { cn } from "@/lib/utils";
 
 const roboto = Roboto({
@@ -23,9 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={cn(roboto.className, "dark")}>
-      <body className="flex flex-col items-center max-w-screen overflow-x-hidden">
+      <body className="relative flex flex-col items-center max-w-screen min-h-screen h-screen overflow-x-hidden">
         <ToastProvider>
-          <AnchoredToastProvider>{children}</AnchoredToastProvider>
+          <AnchoredToastProvider>
+            {children}
+            <LightRays />
+          </AnchoredToastProvider>
         </ToastProvider>
       </body>
     </html>

@@ -8,7 +8,7 @@ export default function HomeLayout({
   return (
     <>
       <PublicHeader />
-      <main className="max-w-7xl px-4">{children}</main>
+      <main className="max-w-7xl h-full px-4">{children}</main>
     </>
   );
 }
