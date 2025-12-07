@@ -88,10 +88,10 @@ export function LightRays({
   className,
   style,
   count = 7,
-  color = "rgba(160, 210, 255, 0.2)",
-  blur = 36,
-  speed = 14,
-  length = "70vh",
+  color = "oklch(90.1% 0.076 70.697 / 0.12)",
+  blur = 64,
+  speed = 20,
+  length = "80vh",
   ref,
   ...props
 }: LightRaysProps) {

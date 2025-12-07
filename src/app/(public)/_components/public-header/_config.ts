@@ -10,6 +10,10 @@ const PUBLIC_HEADER_ITEMS = [
     label: "Início",
     href: "/",
   },
+  {
+    label: "OSS",
+    href: "/",
+  },
 ] satisfies PublicHeaderItem[];
 
 export { PUBLIC_HEADER_ITEMS };
