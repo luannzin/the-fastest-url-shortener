@@ -25,12 +25,10 @@ const URLS = [
 async function getUrlBySlug(
   slug: string,
 ): Promise<(typeof URLS)[number] | null> {
+  // removed 2 seconds simulated setTimeout, use cache dont work in Vercel yet.
+  
   cacheLife("days");
   cacheTag("url-by-slug");
-
-  console.log("let's wait for 2 seconds");
-  await setTimeout(2000);
-  console.log("done waiting");
 
   const url = URLS.find((url) => url.slug === slug);
   if (!url) {
