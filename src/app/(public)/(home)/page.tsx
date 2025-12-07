@@ -11,9 +11,9 @@ import { LightRays } from "@/components/ui/light-rays";
 
 export default function Home() {
   return (
-    <section className="py-16 flex flex-col items-center gap-8 max-w-2xl">
+    <section className="py-16 flex flex-col items-center gap-8 max-w-3xl">
       <div className="flex flex-col items-center gap-4">
-        <h1 className="text-4xl font-bold text-center text-balance">
+        <h1 className="text-5xl font-bold text-center text-balance">
           Build{" "}
           <span className="italic bg-linear-to-r from-primary to-destructive bg-clip-text text-transparent">
             stronger{" "}
@@ -30,10 +30,14 @@ export default function Home() {
         <Form>
           <Field>
             <InputGroup>
+              <InputGroupAddon align="inline-start">
+                <LinkIcon className="size-4" />
+              </InputGroupAddon>
               <InputGroupInput
-                placeholder="Paste your long link here"
+                placeholder="Paste your very long link here"
                 type="url"
                 required
+                size="lg"
               />
               <InputGroupAddon align="inline-end">
                 <Button size="xs" type="submit">
@@ -41,11 +45,8 @@ export default function Home() {
                   <span className="line-through opacity-50">$0</span> Free
                 </Button>
               </InputGroupAddon>
-              <InputGroupAddon align="inline-start">
-                <LinkIcon className="size-3" />
-              </InputGroupAddon>
             </InputGroup>
-            <FieldError>Please enter a valid email address.</FieldError>
+            <FieldError>Please enter a valid URL.</FieldError>
           </Field>
         </Form>
       </div>

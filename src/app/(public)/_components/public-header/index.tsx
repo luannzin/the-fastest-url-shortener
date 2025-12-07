@@ -7,9 +7,7 @@ function PublicHeader() {
     <header className="relative w-full flex justify-center h-16">
       <div className="max-w-7xl w-full flex items-center justify-between px-4">
         <div className="flex items-center gap-8 max-sm:gap-4">
-          <div>
-            <span className="text-xl font-bold">zigg</span>
-          </div>
+          <span className="text-xl font-bold">zigg</span>
           <div className="flex items-center gap-2">
             {PUBLIC_HEADER_ITEMS.map((item) => (
               <Button
