@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { AnchoredToastProvider, ToastProvider } from "@/components/ui/toast";
 import "./globals.css";
 
 import { Roboto } from "next/font/google";
+import { cn } from "@/lib/utils";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -20,8 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={roboto.className}>
-      <body>{children}</body>
+    <html lang="pt-BR" className={cn(roboto.className, "dark")}>
+      <body className="flex flex-col items-center max-w-screen overflow-x-hidden">
+        <ToastProvider>
+          <AnchoredToastProvider>{children}</AnchoredToastProvider>
+        </ToastProvider>
+      </body>
     </html>
   );
 }
