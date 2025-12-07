@@ -41,7 +41,13 @@ export default function Home() {
               <InputGroupAddon align="inline-end">
                 <Button size="xs" type="submit">
                   Shorten for{" "}
-                  <span className="line-through opacity-50">$0</span> Free
+                  <span
+                    className="line-through opacity-50 cursor-help"
+                    title="competitor's plan price"
+                  >
+                    $35
+                  </span>{" "}
+                  Free
                 </Button>
               </InputGroupAddon>
             </InputGroup>

@@ -27,8 +27,10 @@ export default function RootLayout({
       <body className="relative flex flex-col items-center max-w-screen min-h-screen h-screen overflow-x-hidden">
         <ToastProvider>
           <AnchoredToastProvider>
+            <div className="w-full h-full absolute -z-10">
+              <LightRays raysColor="#fed7aa" />
+            </div>
             {children}
-            <LightRays />
           </AnchoredToastProvider>
         </ToastProvider>
       </body>
