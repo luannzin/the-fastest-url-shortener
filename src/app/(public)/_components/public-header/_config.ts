@@ -7,7 +7,7 @@ type PublicHeaderItem = {
 
 const PUBLIC_HEADER_ITEMS = [
   {
-    label: "Início",
+    label: "Home",
     href: "/",
   },
   {

@@ -23,8 +23,8 @@ function PublicHeader() {
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <Button variant="outline">Entrar</Button>
-          <Button>Criar conta</Button>
+          <Button variant="outline">Login</Button>
+          <Button>Sign up Free</Button>
         </div>
       </div>
     </header>

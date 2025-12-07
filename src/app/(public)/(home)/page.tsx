@@ -1,9 +1,18 @@
+import { LinkIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Field, FieldError } from "@/components/ui/field";
+import { Form } from "@/components/ui/form";
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupInput,
+} from "@/components/ui/input-group";
 import { LightRays } from "@/components/ui/light-rays";
 
 export default function Home() {
   return (
-    <section className="py-16">
-      <div className="flex flex-col items-center gap-4 max-w-2xl">
+    <section className="py-16 flex flex-col items-center gap-8 max-w-2xl">
+      <div className="flex flex-col items-center gap-4">
         <h1 className="text-4xl font-bold text-center text-balance">
           Build{" "}
           <span className="italic bg-linear-to-r from-primary to-destructive bg-clip-text text-transparent">
@@ -16,6 +25,29 @@ export default function Home() {
           them to the right information. Build, edit, and track everything
           inside the zigg.
         </span>
+      </div>
+      <div className="max-w-md w-full">
+        <Form>
+          <Field>
+            <InputGroup>
+              <InputGroupInput
+                placeholder="Paste your long link here"
+                type="url"
+                required
+              />
+              <InputGroupAddon align="inline-end">
+                <Button size="xs" type="submit">
+                  Shorten for{" "}
+                  <span className="line-through opacity-50">$0</span> Free
+                </Button>
+              </InputGroupAddon>
+              <InputGroupAddon align="inline-start">
+                <LinkIcon className="size-3" />
+              </InputGroupAddon>
+            </InputGroup>
+            <FieldError>Please enter a valid email address.</FieldError>
+          </Field>
+        </Form>
       </div>
       <LightRays />
     </section>
