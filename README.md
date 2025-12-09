@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+✨ A super-fast open-source URL shortener built with Next.js 16 + cache components.
 
-## Getting Started
+## 🚀 Demo  
+https://ziggto.vercel.app
 
-First, run the development server:
+## 📦 What it is  
+A straightforward URL-shortening service: give it a URL, get a short link.  
+Built as a lightweight, easy-to-deploy OSS project.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠 Built with  
+- Next.js 16  
+- Tailwind CSS
+- Drizzle ORM
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Getting Started  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites  
+Make sure you have some packager manager installed.
 
-## Learn More
+## ✅ Usage
 
-To learn more about Next.js, take a look at the following resources:
+Just run the server and start using the web-interface to shorten URLs.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Why this project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Minimal dependencies
+* Fast, cache-based architecture
+* Open-source — easy to fork, extend or self-host
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome. If you want to help:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repo
+2. Create a branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'feat: …'`)
+4. Push to your branch and open a Pull Request
+
+## 📄 License
+
+This project is available under the MIT License — see [LICENSE](LICENSE) for details.
