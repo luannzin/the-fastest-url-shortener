@@ -7,16 +7,22 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "docker:up": "docker compose up -d"
   },
   "dependencies": {
     "@base-ui-components/react": "^1.0.0-rc.0",
+    "@prisma/adapter-pg": "^7.4.1",
+    "@prisma/client": "^7.4.1",
+    "bcryptjs": "^3.0.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.556.0",
     "motion": "^12.23.25",
     "next": "16.0.7",
     "ogl": "^1.0.11",
+    "pg": "^8.18.0",
+    "prisma": "^7.4.1",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "tailwind-merge": "^3.4.0"
