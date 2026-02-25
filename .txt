@@ -1,4 +1,0 @@
-- rota de register POST [src/app/api/auth/register]
-- rota de usuarios GET [src/app/api/users/get]
-- importar o PRISMA [prisma/schema.prisma, src/lib/prisma.ts]
-- Criar um banco de dados postgresql com DOCKER
