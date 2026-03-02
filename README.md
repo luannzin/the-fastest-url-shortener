@@ -11,21 +11,47 @@ Built as a lightweight, easy-to-deploy OSS project.
 - Next.js 16  
 - Tailwind CSS
 - Drizzle ORM
+- PostgreSQL
 
-## 🔧 Getting Started  
+## 🔧 Getting Started
 
-### Prerequisites  
-Make sure you have some packager manager installed.
+### 1. Fork and clone the repository
 
-## ✅ Usage
+Fork the repo and then clone your fork:
+```bash
+git clone https://github.com/your-username/the-fastest-url-shortener.git
+cd the-fastest-url-shortener
+```
 
-Just run the server and start using the web-interface to shorten URLs.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-## 🎯 Why this project
+### 3. Set up environment variables
+```bash
+cp .env.example .env
+```
 
-* Minimal dependencies
-* Fast, cache-based architecture
-* Open-source — easy to fork, extend or self-host
+> Open `.env` and fill in the required values.
+
+### 4. Start the database
+```bash
+npm run docker:up
+```
+
+### 5. Run database migrations
+```bash
+npm run db:generate
+npm run db:migrate
+```
+
+### 6. Start the development server
+```bash
+npm run dev
+```
+
+The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ## 🤝 Contributing
 

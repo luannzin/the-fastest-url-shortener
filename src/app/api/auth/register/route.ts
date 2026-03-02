@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createUser } from "@/services/usersServices";
+import { createUser } from "@/services/users";
 
 export async function POST(request: Request) {
     try {

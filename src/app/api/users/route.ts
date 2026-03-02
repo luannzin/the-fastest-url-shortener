@@ -1,6 +1,5 @@
-export const runtime = "nodejs";
 import { NextResponse } from "next/server";
-import { getUsers } from "@/services/usersServices";
+import { getUsers } from "@/services/users";
 
 export async function GET(request: Request) {
     try {
