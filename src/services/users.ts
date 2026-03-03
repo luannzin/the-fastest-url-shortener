@@ -3,7 +3,7 @@ import { users } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
 
-interface CreateUserDTO {
+type CreateUserDTO = {
     name: string;
     email: string;
     password: string;

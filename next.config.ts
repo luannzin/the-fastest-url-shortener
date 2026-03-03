@@ -3,11 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
-
-  experimental: {
-    typedRoutes: true,
-    cacheComponents: true
-  }
+  typedRoutes: true,
+  cacheComponents: true
 
 };
 
